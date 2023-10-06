@@ -62,7 +62,9 @@ function SearchManufacturer({
                       " relative search-manufacturer__option ${active ?' bg-primary-blue text-white' : ' text-gray-900'}"
                     }
                     value={item}
-                  ></Combobox.Option>
+                  >
+                    {item}
+                  </Combobox.Option>
                 ))
               )}
             </Combobox.Options>
