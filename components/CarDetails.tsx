@@ -1,6 +1,12 @@
-import React from "react";
+import { CarProps } from "@/types";
 
-const CarDetails = () => {
+interface CarDetailsProps {
+  isOpen: boolean;
+  closeModal: () => void;
+  car: CarProps;
+}
+
+const CarDetails: React.FC<CarDetailsProps> = () => {
   return <div>CarDetails</div>;
 };
 
